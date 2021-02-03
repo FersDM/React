@@ -33,7 +33,7 @@ function App() {
 
   const consultarAPI = async () => {
     const api = await fetch(
-      "http://breaking-bad-quotes.herokuapp.com/v1/quotes"
+      "https://breaking-bad-quotes.herokuapp.com/v1/quotes"
     );
     const frase = await api.json();
     setFrase(frase[0]);
